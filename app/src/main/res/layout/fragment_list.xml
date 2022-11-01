@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListFragment"
+    android:background="@drawable/backgroud"><![CDATA[
+
+    >
+
+
+
+
+
+    ]]>
+
+    <ImageView
+        android:id="@+id/imageLogo2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_doesa_de" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerTarefa"
+        android:layout_width="404dp"
+        android:layout_height="543dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:circularflow_defaultRadius="40dp"
+        app:circularflow_radiusInDP="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/floatingAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageLogo2" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingAdd"
+        android:layout_width="71dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="4dp"
+        android:clickable="true"
+        android:contentDescription="TODO"
+        android:isScrollContainer="false"
+        android:src="@drawable/ic_baseline_add_24"
+        app:backgroundTint="#00777D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/buttonSuporte"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#00777D"
+        android:backgroundTintMode="add"
+        android:hapticFeedbackEnabled="false"
+        android:text="Suporte"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/floatingAdd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonMeuPerfil"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#00777D"
+        android:text="Perfil"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/floatingAdd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
