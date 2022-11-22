@@ -1,4 +1,4 @@
-# Doe Saúde App - *PROJETO SE ENCONTRA NA BRANCH MASTER*
+# Doe Saúde App 
 Projeto Integrador Doe Saúde App - BootCamp Generation,
 
 
